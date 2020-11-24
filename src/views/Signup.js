@@ -1,11 +1,11 @@
 import React from 'react';
-// import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar';
 
 function Signup(){
 
     return(
         <div>
-            {/* <Navbar /> */}
+            <Navbar />
             <h1>El Signup</h1>
         </div>
     )
