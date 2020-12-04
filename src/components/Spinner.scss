@@ -1,0 +1,15 @@
+@import "../styles/_BrandingColors.scss";
+
+.spinner{
+    border: 1px solid $neutralLightGrayColor;
+}
+.spinner__circle{
+    height:10rem;
+    width: 10rem;
+    color: $brandSecondaryColor;
+}
+.spinner__flash{
+    height:10rem;
+    width: 10rem;
+    color: $brandSecondaryColor;
+}

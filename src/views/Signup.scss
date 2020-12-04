@@ -1,0 +1,20 @@
+@import '../styles/BrandingColors';
+
+.signup{
+    background-color: $neutralLightGrayColor;
+}
+
+.signup__container{
+    border: 1px solid $neutralLightGrayColor;
+    background-color: $neutralLightColor;
+}
+
+.signup__button{
+    background-color: $brandPrimaryColor;
+    color:$neutralLightColor;
+    border: none;
+    &:hover {
+        color:$neutralLightColor;
+        background-color: $brandSecondaryColor;
+    }
+}

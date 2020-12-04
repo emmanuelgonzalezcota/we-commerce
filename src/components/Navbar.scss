@@ -1,0 +1,54 @@
+@import "../styles/_BrandingColors.scss";
+@import "../styles/mixins.scss";
+
+nav{
+    height: 4rem;
+    background: $brandPrimaryColor;
+    font-style: $primaryFont;
+    font-size: 1rem;
+    font-weight: bold;
+    .navbar__brand{
+        //border: 2px solid yellow;
+        
+    }
+    .navbar__links{
+        //border: 2px solid yellow;
+        width: auto;
+        
+    }
+    .navbar__search-bar{
+        //border: 2px solid yellow;
+        
+    }
+    .navbar__search-button{
+        background: $neutralLightGrayColor;
+        &:hover {
+            background-color: $brandSecondaryColor;
+            color: $neutralLightColor;
+        }
+    }
+    .fab{
+        color: $neutralLightColor;
+        border-radius: 1rem;
+        &:hover {
+            color: $brandSecondaryColor;
+        }
+    }
+    .navbar__toggler-button{
+        background-color: $brandPrimaryColor;
+        border: none;
+        &:hover {
+            color: $brandSecondaryColor;
+        }
+    }
+    .navbar__toggler-icon{
+        color: $neutralLightColor;
+        
+    }
+    .navbar__profile-image{
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: white;
+        
+    }
+}

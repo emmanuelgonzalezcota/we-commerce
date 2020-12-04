@@ -1,0 +1,18 @@
+@import '../styles/BrandingColors';
+@import "../styles/mixins.scss";
+
+footer{
+    background-color: $brandPrimaryColor;
+    color: $neutralLightColor;
+    font-style: $primaryFont;
+    .fab{
+        color: $neutralLightColor;
+        &:hover {
+            color: $brandSecondaryColor;
+        }
+    }
+    .footer__copyright{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
