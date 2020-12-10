@@ -31,8 +31,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      {/* REVISAR LOGICA DE SPINNER */}
-      { useState===null ? <Spinner/> : <Cards items={items}/> }
+      { items.length===0 ? <Spinner/> : <Cards items={items}/> }
       <Footer />
     </div>
   )

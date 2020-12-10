@@ -22,13 +22,15 @@ function Navbar() {
             Authorization: `JWT ${token}`
         }
     }
-    axios.get("https://ecomerce-master.herokuapp.com/api/v1/user/me",config)
+    if (token){
+      axios.get("https://ecomerce-master.herokuapp.com/api/v1/user/me",config)
         .then((response)=>{
             setUser(response.data)
         })
         .catch((err) =>{
             alert(err.response.data.message)
         })
+    }   
 
   },[])
 
@@ -40,12 +42,11 @@ function Navbar() {
       </Link>
       
       <div className="navbar__links collapse navbar-collapse mr-2" id="navbarNav">
-        {user ? (
+        {user.user ? (
           <ul className="navbar-nav">
             <li className="nav-item active">
               <Link className="nav-link" to="/profile">
-                {/* ! Hola, {user.user.first_name} ! */}
-                HOLA :(
+                ! Hola, {user.user.first_name} !
               </Link>
             </li>
             <li className="nav-item">
